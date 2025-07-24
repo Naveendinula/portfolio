@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Your Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- === External Dependencies === -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- === Modular Stylesheets === -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Vertical Navigation Sidebar -->
@@ -44,7 +47,7 @@
                     <!-- ...existing portfolio items... -->
                     <div class="portfolio-item" data-category="web">
                         <div class="portfolio-image">
-                            <img src="assets/eia-dashboard.png" alt="Energy Dashboard" class="project-thumbnail">
+                            <img src="assets/images/energy dashboard.png" alt="Energy Dashboard" class="project-thumbnail">
                         </div>
                         <div class="portfolio-content">
                             <h3>Energy Dashboard</h3>
@@ -57,7 +60,7 @@
 
                     <div class="portfolio-item" data-category="web">
                         <div class="portfolio-image">
-                            <img src="assets/Building-smart-meter project icon.png" alt="Building Analytics" class="project-thumbnail">
+                            <img src="assets/images/Building-smart-meter project icon.png" alt="Building Analytics" class="project-thumbnail">
                         </div>
                         <div class="portfolio-content">
                             <h3>Building‑Level Electricity Analytics & Forecasting</h3>
@@ -70,15 +73,25 @@
 
                     <div class="portfolio-item" data-category="web">
                         <div class="portfolio-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-cloud-sun"></i>
-                                <p>Weather Dashboard</p>
-                            </div>
+                            <img src="assets/images/UWG greenroof.png" alt="Urban Heat Island" class="project-thumbnail">
                         </div>
                         <div class="portfolio-content">
-                            <h3>Weather Dashboard</h3>
-                            <p>A responsive weather application with interactive charts</p>
-                            <a href="#" class="project-button">
+                            <h3>Urban Heat Island Effect Mitigation with Green Roofs in Amsterdam</h3>
+                            <p>Urban microclimate simulation using Dragonfly and 3D BAG dataset to analyze green roof impact on Amsterdam's heat island effect.</p>
+                            <a href="urban-heat-island.html" class="project-button">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="assets/images/CKC environmental analysis.png" alt="CKC Environmental Analysis" class="project-thumbnail">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Environmental Performance Analysis of CKC Building, Central Hong Kong</h3>
+                            <p>Comprehensive environmental analysis including weather patterns, sunpath studies, direct sun exposure, radiation mapping, and view analysis for sustainable design optimization.</p>
+                            <a href="ckc-environmental-analysis.html" class="project-button">
                                 View Project <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -138,6 +151,11 @@
      
     </div>
 
+    <!-- === JavaScript Modules === -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/utils/dom-utils.js"></script>
+    <script src="assets/js/utils/animation-utils.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

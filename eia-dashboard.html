@@ -5,30 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EIA Energy Dashboard · Portfolio</title>
 
-  <!-- === Fonts & Icons === -->
+  <!-- === External Dependencies === -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
-  <!-- === Site‑wide styles === -->
+  <!-- === Modular Stylesheets === -->
   <link rel="stylesheet" href="styles.css" />
-
-  <style>
-    /* --- Power‑BI frame & loader (minimal inline so file works stand‑alone) --- */
-    .powerbi-container{position:relative;width:100%;height:600px;margin:2rem 0;border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.1);background:#f8f9fa}
-    .powerbi-iframe{width:100%;height:100%;border:0;border-radius:12px;opacity:0;transition:opacity .3s ease}
-    .loader-container{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;z-index:2;background:#f8f9fa}
-    .loader{width:40px;height:40px;border:4px solid #f3f3f3;border-top:4px solid #ff6b00;border-radius:50%;animation:spin 1s linear infinite}
-    @keyframes spin{to{transform:rotate(360deg)}}
-    .dashboard-fallback{position:relative;text-align:center;border:2px dashed #ccc;border-radius:12px;padding:1.5rem;display:none}
-    .dashboard-fallback img{max-width:100%;border-radius:8px;opacity:.85}
-    .fallback-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;background:rgba(0,0,0,.6);padding:1rem;border-radius:12px}
-    .fallback-button{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem 1rem;border-radius:4px;background:#444;color:#fff;text-decoration:none;font-weight:600}
-    .fallback-button:hover{opacity:.9}
-    @media (max-width:768px){.powerbi-container{height:500px}}
-    @media (max-width:480px){.powerbi-container{height:400px}}
-  </style>
+  <link rel="stylesheet" href="assets/css/components/powerbi-dashboard.css" />
 </head>
 <body>
   <!-- === Vertical navigation === -->
@@ -77,8 +62,6 @@
       
       <!-- GitHub Repository Section -->
       <div class="github-section" style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); text-align: center;">
-        <h2 style="font-family: var(--font-primary, 'JetBrains Mono'); font-size: 1.5rem; margin-bottom: 1rem; color: #000;">Project Repository</h2>
-        <p style="color: #666; margin-bottom: 1.5rem;">Explore the complete source code, data processing scripts, and documentation for this Energy Performance Dashboard project.</p>
         <a href="https://github.com/Naveendinula/fuel-utilization-by-electricity-market" target="_blank" rel="noopener noreferrer" class="github-link" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #000; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
           <i class="fab fa-github" style="font-size: 1.2rem;"></i>
           View Project Repository
